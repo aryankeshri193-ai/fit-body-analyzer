@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI-Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="card">
+            <div class="left-sec">
+                <div class="heading">
+                    <h2>Your body fat</h2>
+                </div>
+                <div class="gender">
+                    <select id="gender">
+                        <option value="Gender">Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="text">
+                    <span>Calculate your BMI &</span>
+                    <p>Body Fat Percentage</p>
+                </div>
+                <div class="measure">
+                    <input type="number" placeholder="Weight (kg)" id="weight">
+                </div>
+                <div class="inputs-group1">
+                    <input type="number" placeholder="Height (cm)" id="Height">
+                    <input type="number" placeholder="Age" id="Age">
+                </div>
+                <div class="inputs-group2">
+                    <input id="leanMass" placeholder="Estimated Lean body mass" readonly>
+                    <input id="bfW" placeholder="Estimated Body Fat Weight" readonly>
+                </div>
+                <div class="inputs-group3">
+                    <input id="bfP" placeholder="Estimated Body fat percentage" readonly>
+                </div>
+                <div class="inputs-group4">
+                    <input placeholder="Category" id="Category" readonly>
+                </div>
+                <div class="button">
+                    <button id="btn">Analyze Body</button>
+                </div>
+            </div>
+            <div class="right-sec">
+                <div class="image">
+                    <img src="Bmi-image.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
