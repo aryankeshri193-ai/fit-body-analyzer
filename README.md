@@ -48,7 +48,7 @@ Fit-Body-Analyzer/
 
 **Aryan Keshri**
 
-GitHub: https://github.com/YOUR_USERNAME
+GitHub:(https://github.com/aryankeshri193-ai/fit-body-analyzer/tree/main)
 
 ---
 
