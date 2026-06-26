@@ -19,7 +19,7 @@ A responsive BMI & Body Fat Calculator built using HTML, CSS, and JavaScript.
 
 ## 🚀 Live Demo
 
-🔗 https://your-vercel-link.vercel.app
+[vercel link app](https://fit-body-analyzer.vercel.app/)
 
 ## 📸 Screenshot
 
