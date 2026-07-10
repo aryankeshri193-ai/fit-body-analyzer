@@ -250,125 +250,113 @@ input[read-only] {
     font-weight: 700;
     transition: 0.3s;
 }
-/* ===========================
-   iPhone 14 Pro Max Responsive
-=========================== */
+/* ==========================================================================
+   DO NOT TOUCH YOUR ORIGINAL CSS ABOVE. JUST PASTE THIS AT THE VERY BOTTOM.
+   ========================================================================== */
 
-@media screen and (max-width: 430px) {
-
-    .main-container {
-        height: auto;
-        padding: 15px;
-    }
-
+/* 1. For Small Laptops & Tablets (Max Width: 1024px) */
+@media (max-width: 1024px) {
     .card {
-        width: 100%;
         height: auto;
-        flex-direction: column;
+        min-height: 95vh;
+        margin: 20px 0;
     }
-
-    .left-sec,
-    .right-sec {
-        width: 100%;
-        height: auto;
-    }
-
-    .heading {
-        padding-top: 30px;
-        text-align: center;
-    }
-
     .heading h2 {
-        font-size: 42px;
-        line-height: 1.2;
+        font-size: 40px;
     }
-
-    .gender {
-        justify-content: center;
-        padding: 20px 0;
+    .inputs-group1, .inputs-group2 {
+        gap: 40px;
+        padding-top: 40px;
     }
-
-    .gender select {
-        width: 180px;
-        height: 40px;
-        font-size: 16px;
-    }
-
-    .text {
-        padding-top: 5px;
-        text-align: center;
-    }
-
-    .text span,
-    .text p {
-        font-size: 15px;
-    }
-
-    .measure input {
-        width: 95%;
-        height: 45px;
-        padding-left: 15px;
-    }
-
-    .inputs-group1,
-    .inputs-group2 {
-        flex-direction: column;
-        gap: 18px;
-        padding-top: 20px;
-    }
-
-    .inputs-group1 input,
-    .inputs-group2 input {
-        width: 95%;
-        height: 45px;
-    }
-
-    .inputs-group3,
-    .inputs-group4 {
-        margin-top: 20px;
-    }
-
-    .inputs-group3 input,
-    .inputs-group4 input {
-        width: 95%;
-        height: 45px;
-    }
-
-    .button {
-        padding: 25px 0;
-    }
-
-    .button button {
-        width: 95%;
-        height: 50px;
-        font-size: 17px;
-        transition: all .25s ease;
-    }
-    .button button:active{
-    transform: scale(0.96);
-    opacity: .9;
-    box-shadow: 0 6px 18px rgba(37,99,235,.35);
 }
 
-    .right-sec {
-        padding: 15px;
+/* 2. For Tablets & IPads (Max Width: 768px) */
+@media (max-width: 768px) {
+    .main-container {
+        height: auto;
+        min-height: 100vh;
+        padding: 20px 0;
     }
-
-    .image img {
+    .card {
+        flex-direction: column; 
+        height: auto;
+        width: 90%;
+    }
+    .left-sec {
         width: 100%;
         height: auto;
+        padding-bottom: 40px;
+    }
+    .right-sec {
+        width: 100%;
+        height: auto; /* Removed fixed height to allow image to breathe */
+        padding: 20px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0F172A; /* Blends background for better aspect ratio */
+    }
+    .image {
+        width: 90%; /* Forces proper layout structure */
+        max-width: 400px;
+    }
+    .image img {
+        width: 100%;
+        height: auto; /* Fixes dynamic vertical stretching entirely */
+        object-fit: contain; 
+        border-radius: 12px;
+    }
+    .heading h2 {
+        font-size: 35px;
+    }
+    .inputs-group1, .inputs-group2 {
+        gap: 20px;
+        padding-top: 30px;
+    }
+}
+
+/* 3. For Mobile Phones (Max Width: 480px) */
+@media (max-width: 480px) {
+    .card {
+        width: 95%;
+    }
+    .heading h2 {
+        font-size: 28px;
+    }
+    .heading {
+        padding-top: 30px;
+    }
+    .gender {
+        justify-content: center;
+        padding-right: 0;
+        margin-top: 15px;
+    }
+    .inputs-group1, .inputs-group2 {
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 25px;
+    }
+    .inputs-group1 input, .inputs-group2 input {
+        width: 75%;
+    }
+    .measure input {
+        padding-left: 0;
+        text-align: center;
+    }
+    .right-sec {
+        width: 100%;
+        height: auto;
+        padding: 25px 15px;
+    }
+    .image {
+        width: 85%; /* Sets crisp layout frame borders on small screens */
+    }
+    .image img {
+        width: 100%;
+        height: auto; /* Visual aspect-ratio dynamic scale lock */
         object-fit: contain;
-        border-radius: 16px;
     }
-
-    input:hover,
-    button:hover,
-    select:hover {
-        transform: none;
- 
+    input:hover, button:hover, select:hover {
+        transform: scale(1.05);
     }
-
-} 
- 
-
-   
+}
