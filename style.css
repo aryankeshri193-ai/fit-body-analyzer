@@ -250,11 +250,6 @@ input[read-only] {
     font-weight: 700;
     transition: 0.3s;
 }
-/* ==========================================================================
-   DO NOT TOUCH YOUR ORIGINAL CSS ABOVE. JUST PASTE THIS AT THE VERY BOTTOM.
-   ========================================================================== */
-
-/* 1. For Small Laptops & Tablets (Max Width: 1024px) */
 @media (max-width: 1024px) {
     .card {
         height: auto;
@@ -270,7 +265,7 @@ input[read-only] {
     }
 }
 
-/* 2. For Tablets & IPads (Max Width: 768px) */
+/*For Tablets & IPads (Max Width: 768px) */
 @media (max-width: 768px) {
     .main-container {
         height: auto;
@@ -289,20 +284,20 @@ input[read-only] {
     }
     .right-sec {
         width: 100%;
-        height: auto; /* Removed fixed height to allow image to breathe */
+        height: auto; 
         padding: 20px 10px;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #0F172A; /* Blends background for better aspect ratio */
+        background-color: #0F172A; 
     }
     .image {
-        width: 90%; /* Forces proper layout structure */
+        width: 90%; 
         max-width: 400px;
     }
     .image img {
         width: 100%;
-        height: auto; /* Fixes dynamic vertical stretching entirely */
+        height: auto; 
         object-fit: contain; 
         border-radius: 12px;
     }
@@ -315,7 +310,7 @@ input[read-only] {
     }
 }
 
-/* 3. For Mobile Phones (Max Width: 480px) */
+/* For Mobile Phones (Max Width: 480px) */
 @media (max-width: 480px) {
     .card {
         width: 95%;
@@ -349,11 +344,11 @@ input[read-only] {
         padding: 25px 15px;
     }
     .image {
-        width: 85%; /* Sets crisp layout frame borders on small screens */
+        width: 85%; 
     }
     .image img {
         width: 100%;
-        height: auto; /* Visual aspect-ratio dynamic scale lock */
+        height: auto; 
         object-fit: contain;
     }
     input:hover, button:hover, select:hover {
